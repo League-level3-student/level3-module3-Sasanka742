@@ -23,7 +23,7 @@ class _01_StringMethodsTest {
     @Test 
     void testLineLeader() {
         assertEquals("John A", _01_StringMethods.lineLeader("John C", "John B", "John A"));
-        assertEquals("John A", _01_StringMethods.lineLeader("           John A  ", " John C   ", "     John B "));
+        assertEquals("John A", _01_StringMethods.lineLeader("           John A  ", " John C   ", "     John B ")); 
         assertEquals("Charley F", _01_StringMethods.lineLeader("  Allison Z", " Charley F ", " Brad H "));
     }
 
@@ -43,13 +43,13 @@ class _01_StringMethodsTest {
         assertEquals(0, _01_StringMethods.substringCount("There shoudn't be matches here", "tuna"));
     }
 
-    @Test
+     @Test
     void testEncrypt() {
         assertEquals("KwYPDww=", _01_StringMethods.encrypt("Hello", 'c'));
         assertEquals("FCglYAwlISc1JWAvJmABLSE6KS4nYBAyLycyIS0tJTIz", _01_StringMethods.encrypt("The League of Amazing Programmers", '@'));
         assertEquals("JBkdFVAEH1AVEQRQAx8dFVAAAhUEChUcAw==", _01_StringMethods.encrypt("Time to eat some pretzels", 'p'));
     }
-
+     
     @Test
     void testDecrypt() {
         assertEquals("Hello", _01_StringMethods.decrypt("KwYPDww=", 'c'));
