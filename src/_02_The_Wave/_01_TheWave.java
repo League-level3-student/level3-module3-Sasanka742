@@ -27,9 +27,6 @@ public class _01_TheWave {
     		if(builder.charAt(i) != ' ') {
     			builder.setCharAt(i, Character.toUpperCase(builder.charAt(i)));
     			wave.add(builder.toString());
-    			
-    		}else {
-    			wave.add(builder.toString());
     		}
     	}
         return wave;

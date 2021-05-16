@@ -26,6 +26,7 @@ public class _01_RegularExpressionsIntroTest {
     
     @Test
     void testEmailAddressRemoved(){
+    	System.out.println( new _01_RegularExpressionsIntro().emailRemover(originalMessage));
         assertEquals(expectedMessage, new _01_RegularExpressionsIntro().emailRemover(originalMessage));
     }
     
